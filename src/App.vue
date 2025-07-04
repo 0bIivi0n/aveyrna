@@ -1,30 +1,53 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <img src="/src/assets/img/logo_aveyrna_online_story_writer_no_bg.png" class="logo" />
+    <p class="desc">Online Story Writer</p>
+
+    <p class="about">Build your story, characters, scenes and more in one place </p>
+
+    <button class="startButton">Start</button>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
+<style>
+
+body {
+  background-color: black;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 40em;
   will-change: filter;
   transition: filter 300ms;
+  margin-top: -250px;
 }
-.logo:hover {
+
+
+.desc {
+  color: skyblue;
+  font-size: 1.5em;
+  margin-top: -110px;
+}
+
+.about {
+  font-size: 1.6em;
+  margin-top: 100px;
+}
+
+.startButton {
+  margin-top: 50px;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: orchid;
+  padding: 10px 20px 10px 20px;
+}
+
+.startButton:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
